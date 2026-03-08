@@ -5,24 +5,26 @@
     font-family: 'Edu NSW ACT Cursive', cursive;
 }
 body { 
-    background-color: beige;
+    background-color: #F5F1E3;
 }
-.navbar {
-    background-color: #556B2F;
-    color: white;
-    padding: 30px;
-    text-align: center;
-    font-size: 30px;
-}
+
 p{
     font-size: 20px;
     margin: 20px;
     text-align: center;
 }
 .footer {
-    background-color: #556B2F;
+    background-color: #3B441E;
     color: white;
     padding: 20px;
     text-align: center;
     font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 18px;
+    }
+    .footer {
+        font-size: 20px;
+    }
 }
