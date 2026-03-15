@@ -8,7 +8,7 @@
   --vino: #631616;           /* Opcional para resaltar fechas */
   
   /* Texto */
-  --texto-principal: #5C4033; /* Un café oscuro orgánico para los nombres */
+  --texto-principal: #5C4033; /*Nombres*/
 }
 * {
   box-sizing: border-box;
@@ -21,14 +21,13 @@
   /* Esta pequeña línea añade una textura de "grano" muy fina */
   background-image: url("https://www.transparenttextures.com/patterns/pinstriped-suit.png");
   background-blend-mode: multiply;
-  
   width: 100%;
   max-width: 400px;
   min-height: 100vh;
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-h1 {
+h1{
   font-family: 'Playfair Display', serif;
   color: var(--texto-principal);
   font-size: 3.5rem;
@@ -36,11 +35,23 @@ h1 {
   letter-spacing: -1px;
   text-align: center;
 }
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--texto-principal);
+  font-size: 1.5rem;
+  margin: 5px 0;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
 .navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+.navbar img {
+  width: 100%;
+  height: auto;
 }
 .mancha-acuarela {
   background-color: var(--olivo-profundo);
@@ -56,7 +67,7 @@ h1 {
   font-weight: 400;
 }
 .history {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--texto-principal);
   line-height: 1.6;
   text-align: center;
@@ -66,6 +77,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   color: var(--texto-principal);
+  font-family: 'Montserrat', sans-serif;
   justify-content: center;
   gap: 10px;
   text-align: justify;
@@ -77,6 +89,20 @@ h1 {
   line-height: 1.6;
   text-align: center;
   padding: 20px;
+}
+.event-details {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--texto-principal);
+  line-height: 1.6;
+  text-align: center;
+  padding: 10px;
+}
+.event-venue {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--texto-principal);
+  line-height: 1.6;
+  text-align: center;
+  padding: 10px;
 }
 .footer {
   font-family: 'Montserrat', sans-serif;
