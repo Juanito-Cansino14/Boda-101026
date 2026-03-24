@@ -85,6 +85,13 @@ img {
   gap: 10px;
   padding: 20px;
 }
+.photograph img {
+  width: 650px;
+  height: auto;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+}
 .event-info{
   font-family: 'Playfair Display', serif;
   color: var(--texto-principal);
@@ -107,11 +114,6 @@ img {
   text-align: center;
   padding: 10px;
 }
-.event-venue fa-location-dot, .event-venue fa-church {
-  font-size: 50px;
-  margin-top: 10px;
-  background-color: var(--bronce);
-}
 .footer {
   font-family: 'Montserrat', sans-serif;
   color: var(--texto-principal);
@@ -123,6 +125,17 @@ img {
   width: auto;
   height: 150px;
 }
+button {
+  background-color: var(--bronce);
+  color: var(--blanco-roto);
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 10px;
+}
 @media (max-width: 600px) {
   .invitacion {
     max-width: 100%;
@@ -133,5 +146,8 @@ img {
   }
   h2 {
     font-size: 2 rem;
+  }
+  .photograph img {
+    width: 90%;
   }
 }
