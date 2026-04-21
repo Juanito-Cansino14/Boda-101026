@@ -1,0 +1,139 @@
+:root {
+    --verde-olivo: #556b2f;      /* DarkOliveGreen */
+    --verde-suave: #8b9467;      /* Verde olivo más claro para detalles */
+    --blanco-puro: #ffffff;
+    --beige-fondo: #f9f8f5;      /* Un blanco "cremoso" muy sutil */
+    --texto-oscuro: #333333;
+    --terracota: #a0522d;        /* Para el botón de enviar (como en tu mockup) */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--beige-fondo);
+    color: var(--texto-oscuro);
+    line-height: 1.6;
+}
+
+.invitation-container {
+    max-width: 500px; /* Ancho típico de móvil/tablet */
+    margin: 0 auto;
+    background-color: var(--blanco-puro);
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* Tipografía */
+.script-font {
+    font-family: 'Dancing Script', cursive;
+    color: var(--verde-olivo);
+    font-size: 2.2rem;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--verde-olivo);
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+/* Secciones */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Portada */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.main-photo img {
+    width: 100%;
+    max-width: 300px;
+    border: 8px solid var(--blanco-puro);
+    outline: 1px solid var(--verde-suave); /* Borde fino verde olivo */
+    margin: 20px 0;
+}
+
+/* Botones */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--verde-olivo);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--verde-suave);
+}
+
+.btn-submit {
+    background-color: var(--terracota);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Cards del evento con borde verde olivo sutil */
+.card {
+    border: 1px solid #e0e0e0;
+    border-top: 4px solid var(--verde-olivo); /* El toque de color */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* Formulario */
+.rsvp-form input, .rsvp-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.rsvp-form input:focus {
+    border-color: var(--verde-olivo);
+    outline: none;
+}
+
+.timer-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.timer-grid div {
+    text-align: center;
+}
+
+.timer-grid span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--verde-olivo);
+}
+
+.timer-grid p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #888;
+}
