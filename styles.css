@@ -9,11 +9,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #F5F5DC;
 }
 /* Estilos para la portada */
+.header {
+  text-align: center;
+  padding: 2rem;
+  color: var(--olivo);
+  font-family: "Playwrite NO", cursive;
+}
 .hero {
   position: relative; /* CLAVE */
-  width: 100%;
+  width: 300px;
   margin: auto;
 }
 .img-principal {
@@ -29,21 +36,76 @@
   left: 0;
   width: 100%;   /* se adapta al tamaño */
   pointer-events: none; /* opcional */
+  background-color: transparent; /* fondo transparente */
 }
 .names {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: var(--blanco);
   text-align: center;
   font-family: "Playwrite NO", cursive;
   font-size: 2rem;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   z-index: 2;
+  background-color: transparent;
 }
-/* Seccion  */
+/* Seccion countdown */
+.day-event{
+  text-align: center;
+}
+/* Seccion about */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+/* Seccion event */
+.event {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
 
+/* Seccion event-details */
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+/* Seccion attendance */  
+.attendance {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.btn-confirm {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Playwrite NO", cursive;
+  font-size: 1rem;
+  justify-content: center;
+}
+.sunflower {
+  width: 100px;
+  height: auto;
+  align-items: center;  
+
+}
 @media screen and (max-width: 500px) {
   .names {
     font-size: 1.5rem;
