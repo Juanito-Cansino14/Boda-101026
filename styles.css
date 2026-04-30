@@ -1,27 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   
   /* Colores de acento */
-  --olivo:  #556b2f; /* Para la mancha de acuarela */
+  --olivo:  #556b2f; /* Para la mancha de acuarela */ 
   --blanco: #ffff; /* Para el texto*/
+  --verde-olivo: #636B2F;
+  --dorado: #ad8a1f;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #F5F5DC;
+}
+body {
+   background-color: var(--verde-olivo);
+}
+.header::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 2px;
+  background: var(--dorado);
+  margin: 10px auto;
+}
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+  justify-content: center;
 }
 /* Estilos para la portada */
 .header {
   text-align: center;
   padding: 2rem;
-  color: var(--olivo);
+  color: var(--dorado);
   font-family: "Playwrite NO", cursive;
 }
 .hero {
   position: relative; /* CLAVE */
   width: 300px;
   margin: auto;
+  border-radius: 25px;
 }
 .img-principal {
   display: block;
@@ -29,6 +50,8 @@
   height: auto;
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
+  border-radius: 500px;
+  border: var(--dorado) solid 2px;
 }
   .img-secundaria {
   position: absolute;
@@ -37,19 +60,12 @@
   width: 100%;   /* se adapta al tamaño */
   pointer-events: none; /* opcional */
   background-color: transparent; /* fondo transparente */
-}
-.names {
-  color: var(--blanco);
-  text-align: center;
-  font-family: "Playwrite NO", cursive;
-  font-size: 2rem;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  z-index: 2;
-  background-color: transparent;
+  border-radius: 25px;
 }
 /* Seccion countdown */
 .day-event{
   text-align: center;
+  font-family:"Urbanist", sans-serif;
 }
 /* Seccion about */
 .about {
@@ -57,29 +73,58 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  font-family:"Urbanist", sans-serif;
+  font-style: italic;
+  width: 350px;
   padding: 2rem;
+  background-color: var(--blanco);
+  border: var(--dorado) solid 2px;
+  border-radius: 10px;
 }
-/* Seccion event */
+/* Seccion events */
 .event {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+/* Seccion event-details */
+.card-event {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   padding: 2rem;
   text-align: center;
+  font-family: "Urbanist", sans-serif;
+  max-width: 350px;
+  width: 100%;
+  background-color: var(--blanco);
+  border: var(--dorado) solid 2px;
+  border-radius: 10px;
 }
-
-/* Seccion event-details */
+.ceremonies {
+  width: 30px;
+  height: auto;
+  align-items: center;  
+}
+.dress-code {
+  width: 50px;
+  height: auto;
+  align-items: center;  
+}
 .event-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   padding: 2rem;
   text-align: center;
+  font-family: "Urbanist", sans-serif;
+  max-width: 350px;
+  width: 100%;
+  background-color: var(--blanco);
+  border: var(--dorado) solid 2px;
+  border-radius: 10px;
 }
 /* Seccion attendance */  
 .attendance {
@@ -87,9 +132,10 @@
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
+  font-family: "Urbanist", sans-serif;
   justify-content: center;
-  gap: 2rem;
   padding: 2rem;
+  max-width: 350px;
 }
 .btn-confirm {
   display: inline-block;
@@ -99,6 +145,7 @@
   font-family: "Playwrite NO", cursive;
   font-size: 1rem;
   justify-content: center;
+  max-width: 350px;
 }
 .sunflower {
   width: 100px;
@@ -106,7 +153,7 @@
   align-items: center;  
 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 350px) {
   .names {
     font-size: 1.5rem;
   } 
