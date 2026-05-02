@@ -66,6 +66,14 @@ body {
 .day-event{
   text-align: center;
   font-family:"Urbanist", sans-serif;
+  color: var(--dorado);
+}
+.counter-time {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-family:"Urbanist", sans-serif;
+ color: var(--dorado);
 }
 /* Seccion about */
 .about {
@@ -101,6 +109,19 @@ body {
   background-color: var(--blanco);
   border: var(--dorado) solid 2px;
   border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: visible;
+  position: relative;
+  }
+.card-event::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 60px;
+  height: 60px;
+  background: url('Img/sunflowerthree.png') no-repeat;
+  background-size: contain;
 }
 .ceremonies {
   width: 30px;
