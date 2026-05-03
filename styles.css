@@ -78,6 +78,7 @@ body {
 /* Seccion about */
 .about {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -98,6 +99,7 @@ body {
 /* Seccion event-details */
 .card-event {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -122,16 +124,29 @@ body {
   height: 60px;
   background: url('Img/sunflowerthree.png') no-repeat;
   background-size: contain;
+  rotate: calc(-45deg);
+}
+.card-event::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url('Img/sunflowerthree.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(40%, 40%) rotate(135deg);
 }
 .ceremonies {
   width: 30px;
   height: auto;
-  align-items: center;  
+  align-items:flex-start;
 }
 .dress-code {
-  width: 50px;
+  width: 40px;
   height: auto;
-  align-items: center;  
+  align-items: flex-start;  
 }
 .event-details {
   display: flex;
