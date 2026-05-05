@@ -13,7 +13,7 @@
   padding: 0;
 }
 body {
-   background-color: var(--verde-olivo);
+  background: var(--olivo);
 }
 .header::after {
   content: "";
@@ -50,17 +50,37 @@ body {
   height: auto;
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
-  border-radius: 500px;
-  border: var(--dorado) solid 2px;
-}
-  .img-secundaria {
-  position: absolute;
-  bottom: 0;     /* pegado abajo */
-  left: 0;
-  width: 100%;   /* se adapta al tamaño */
-  pointer-events: none; /* opcional */
-  background-color: transparent; /* fondo transparente */
   border-radius: 25px;
+  border: var(--dorado) solid 5px;
+}
+ .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+
+  background-image: url('Img/sunflowerthree.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transform: translate(-30%, -30%) rotate(-20deg);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+
+  background-image: url('Img/sunflowerthree.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transform: translate(30%, 30%) rotate(130deg);
+  
 }
 /* Seccion countdown */
 .day-event{
@@ -84,11 +104,10 @@ body {
   align-items: center;
   font-family:"Urbanist", sans-serif;
   font-style: italic;
+  color: var(--dorado);
   width: 350px;
   padding: 2rem;
-  background-color: var(--blanco);
-  border: var(--dorado) solid 2px;
-  border-radius: 10px;
+  background-color: var(--olivo);
 }
 /* Seccion events */
 .event {
@@ -109,7 +128,7 @@ body {
   max-width: 350px;
   width: 100%;
   background-color: var(--blanco);
-  border: var(--dorado) solid 2px;
+  border: var(--dorado) solid 5px;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   overflow: visible;
@@ -129,8 +148,8 @@ body {
 .card-event::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
   width: 60px;
   height: 60px;
   background-image: url('Img/sunflowerthree.png');
@@ -149,6 +168,7 @@ body {
   align-items: flex-start;  
 }
 .event-details {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -159,8 +179,31 @@ body {
   max-width: 350px;
   width: 100%;
   background-color: var(--blanco);
-  border: var(--dorado) solid 2px;
+  border: var(--dorado) solid 5px;
   border-radius: 10px;
+}
+.event-details::before{
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 60px;
+  height: 60px;
+  background: url('Img/sunflowerthree.png') no-repeat;
+  background-size: contain;
+  rotate: calc(-45deg);
+}
+.event-details::after{
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background-image: url('Img/sunflowerthree.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(40%, 40%) rotate(135deg);
 }
 /* Seccion attendance */  
 .attendance {
