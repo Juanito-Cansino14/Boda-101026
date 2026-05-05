@@ -103,7 +103,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family:"Urbanist", sans-serif;
-  font-style: italic;
+  font-style: italic;;
   color: var(--dorado);
   width: 350px;
   padding: 2rem;
